@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekala Mallikharjuna Reddy - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .skill-progress-bar {
+            transition: width 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Portfolio</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-indigo-600 transition duration-300">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-800 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-800 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#experience" class="text-gray-800 hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#contact" class="text-gray-800 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-gray-800 text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white w-full">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="#home" class="text-gray-800 hover:text-indigo-600 transition duration-300">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-800 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-800 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#experience" class="text-gray-800 hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#contact" class="text-gray-800 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 md:pt-40 pb-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 animate-fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-yellow-300">Mekala Mallikharjuna Reddy</span></h1>
+                <h2 class="text-2xl md:text-3xl mb-6">Full Stack Developer</h2>
+                <p class="text-lg mb-8">I build amazing web applications with modern technologies.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-300">Hire Me</a>
+                    <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-600 transition duration-300">My Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center animate-fade-in" style="animation-delay: 0.3s;">
+                <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/c5de3b6c87784118b6edb055264ecf40.jpg" alt="Profile" class="w-64 h-64 object-cover rounded-full border-4 border-white shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">About Me</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/c5de3b6c87784118b6edb055264ecf40.jpg" alt="About Me" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Who am I?</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        I'm a passionate Full Stack Developer with 0+ years of experience in building web applications using modern technologies. I love solving complex problems and creating user-friendly interfaces.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        My journey in tech started when I was 18, and I've been constantly learning and evolving since then. I believe in writing clean, maintainable code and creating applications that make a real difference.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <p class="text-gray-800 font-semibold">Name:</p>
+                            <p class="text-gray-600">Mekala Mallikharjuna Reddy</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-800 font-semibold">Email:</p>
+                            <p class="text-gray-600">mallikharjuna244466666@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-800 font-semibold">From:</p>
+                            <p class="text-gray-600">Addanki,bapatla,Andhra pradesh</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-800 font-semibold">Freelance:</p>
+                            <p class="text-green-600">Available</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-700 transition duration-300">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">My Skills</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-800 font-semibold">c language</span>
+                            <span class="text-indigo-600 font-semibold">60%</span>
+                        </div>
+                        <div class="h-3 bg-gray-300 rounded-full overflow-hidden">
+                            <div class="skill-progress-bar h-full bg-indigo-600 rounded-full" style="width: 0%;" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-800 font-semibold">Data structures</span>
+                            <span class="text-indigo-600 font-semibold">40%</span>
+                        </div>
+                        <div class="h-3 bg-gray-300 rounded-full overflow-hidden">
+                            <div class="skill-progress-bar h-full bg-indigo-600 rounded-full" style="width: 0%;" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-800 font-semibold">React</span>
+                            <span class="text-indigo-600 font-semibold">0%</span>
+                        </div>
+                        <div class="h-3 bg-gray-300 rounded-full overflow-hidden">
+                            <div class="skill-progress-bar h-full bg-indigo-600 rounded-full" style="width: 0%;" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-800 font-semibold">Node.js</span>
+                            <span class="text-indigo-600 font-semibold">0%</span>
+                        </div>
+                        <div class="h-3 bg-gray-300 rounded-full overflow-hidden">
+                            <div class="skill-progress-bar h-full bg-indigo-600 rounded-full" style="width: 0%;" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-800 font-semibold">Python</span>
+                            <span class="text-indigo-600 font-semibold">2%</span>
+                        </div>
+                        <div class="h-3 bg-gray-300 rounded-full overflow-hidden">
+                            <div class="skill-progress-bar h-full bg-indigo-600 rounded-full" style="width: 0%;" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-800 font-semibold">Database (SQL/NoSQL)</span>
+                            <span class="text-indigo-600 font-semibold">0%</span>
+                        </div>
+                        <div class="h-3 bg-gray-300 rounded-full overflow-hidden">
+                            <div class="skill-progress-bar h-full bg-indigo-600 rounded-full" style="width: 0%;" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/9752e27d915c47ce9e7ae6fdf946b4e9.png" alt="Web Development" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Web Development</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/ed448c1ff4c348a0bdf094c6fe89519e.png" alt="Mobile Development" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Mobile Apps</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/c22003cfcb384e679b74bd7a7433ccf0.jpg" alt="Strategy" class="w-16 h-16 mx-auto mb-4 object-cover rounded">
+                    <h3 class="text-lg font-semibold text-gray-800">Strategy & Planning</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform hover:-translate-y-2 transition duration-300">
+                    <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/486c20bc1af24545b41cab880dfd5804.png" alt="Project Management" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Project Management</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">My Projects</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div class="relative">
+                        <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/486c20bc1af24545b41cab880dfd5804.png" alt="Project 1" class="w-full h-64 object-cover">
+                        <div class="project-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-white text-xl font-bold mb-2">E-Commerce Platform</h3>
+                            <p class="text-white text-center mb-4">A full-featured online shopping platform with payment integration.</p>
+                            <a href="#" class="bg-white text-indigo-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">React, Node.js, MongoDB</p>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div class="relative">
+                        <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/ed448c1ff4c348a0bdf094c6fe89519e.png" alt="Project 2" class="w-full h-64 object-cover">
+                        <div class="project-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-white text-xl font-bold mb-2">Task Management App</h3>
+                            <p class="text-white text-center mb-4">A productivity application for managing tasks and projects.</p>
+                            <a href="#" class="bg-white text-indigo-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">Vue.js, Firebase</p>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div class="relative">
+                        <img src="https://public.youware.com/users-website-assets/prod/e2b592b9-2c19-422a-ac23-d9fea67b5bf6/c22003cfcb384e679b74bd7a7433ccf0.jpg" alt="Project 3" class="w-full h-64 object-cover">
+                        <div class="project-overlay absolute inset-0 bg-indigo-600 bg-opacity-90 flex flex-col justify-center items-center p-4 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-white text-xl font-bold mb-2">Portfolio Website</h3>
+                            <p class="text-white text-center mb-4">A responsive portfolio website showcasing my work.</p>
+                            <a href="#" class="bg-white text-indigo-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition duration-300">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Portfolio Website</h3>
+                        <p class="text-gray-600 mb-4">HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-700 transition duration-300">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Experience & Education</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <!-- Work Experience -->
+                <div class="md:w-1/2 md:pr-8 mb-10 md:mb-0">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-briefcase text-indigo-600 mr-3"></i> Work Experience
+                    </h3>
+                    <div class="relative pl-8 border-l-2 border-indigo-600">
+                        <div class="mb-10 relative">
+                            <div class="absolute -left-[17px] top-0 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold text-gray-800">Senior Full Stack Developer</h4>
+                                <p class="text-indigo-600 font-semibold mb-2">Tech Solutions Inc. | 2020 - Present</p>
+                                <p class="text-gray-600">Led a team of developers in building enterprise web applications using React, Node.js, and MongoDB. Implemented CI/CD pipelines and improved code quality with automated testing.</p>
+                            </div>
+                        </div>
+                        <div class="mb-10 relative">
+                            <div class="absolute -left-[17px] top-0 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold text-gray-800">Web Developer</h4>
+                                <p class="text-indigo-600 font-semibold mb-2">Digital Creations | 2018 - 2020</p>
+                                <p class="text-gray-600">Developed responsive websites and e-commerce platforms for clients. Worked with JavaScript frameworks and improved website performance.</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[17px] top-0 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold text-gray-800">Junior Developer</h4>
+                                <p class="text-indigo-600 font-semibold mb-2">WebTech Labs | 2017 - 2018</p>
+                                <p class="text-gray-600">Started my career building website components and learning modern web development practices. Assisted senior developers with projects and bug fixes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="md:w-1/2 md:pl-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap text-indigo-600 mr-3"></i> Education
+                    </h3>
+                    <div class="relative pl-8 border-l-2 border-indigo-600">
+                        <div class="mb-10 relative">
+                            <div class="absolute -left-[17px] top-0 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold text-gray-800">Master's in Computer Science</h4>
+                                <p class="text-indigo-600 font-semibold mb-2">Tech University | 2028 - 2030</p>
+                                <p class="text-gray-600">Specialized in web technologies and software engineering. Graduated with honors and completed a thesis on scalable web architecture.</p>
+                            </div>
+                        </div>
+                        <div class="mb-10 relative">
+                            <div class="absolute -left-[17px] top-0 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold text-gray-800">Bachelor's in Computer Science</h4>
+                                <p class="text-indigo-600 font-semibold mb-2">State University | 2024 - 2028</p>
+                                <p class="text-gray-600">Learned programming fundamentals, data structures, algorithms, and web development. Participated in coding competitions and hackathons.</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[17px] top-0 w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-circle text-xs"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-xl font-bold text-gray-800">Web Development Certification</h4>
+                                <p class="text-indigo-600 font-semibold mb-2">Online Academy | 2025</p>
+                                <p class="text-gray-600">Completed an intensive course on modern web development technologies including React, Node.js, and responsive design principles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Get In Touch</h2>
+                <div class="w-16 h-1 bg-indigo-600 mx-auto mt-4 mb-8"></div>
+            </div>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-600 text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800">Address</h4>
+                                    <p class="text-gray-600">Srkr boys hostel,bhimavaram,west godavari.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-600 text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">mallikharjuna244466666</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-600 text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">+91 9398099759</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-indigo-600 text-white p-3 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-indigo-600 text-white p-3 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="bg-indigo-600 text-white p-3 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-indigo-600 text-white p-3 rounded-full hover:bg-indigo-700 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <form id="contact-form" class="bg-gray-100 p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Message</h3>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-800 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600" placeholder="Your Name">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-800 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600" placeholder="Your Email">
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-800 font-semibold mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600" placeholder="Subject">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-800 font-semibold mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-600" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Portfolio</h2>
+                    <p class="mt-2 text-gray-400">Building amazing web experiences.</p>
+                </div>
+                <div class="flex flex-wrap justify-center space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition duration-300 mb-2 md:mb-0">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition duration-300 mb-2 md:mb-0">About</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white transition duration-300 mb-2 md:mb-0">Skills</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition duration-300 mb-2 md:mb-0">Projects</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition duration-300 mb-2 md:mb-0">Experience</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition duration-300 mb-2 md:mb-0">Contact</a>
+                </div>
+            </div>
+            <hr class="border-gray-800 my-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2025 My Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animate skill bars when in viewport
+        function animateSkillBars() {
+            const skillBars = document.querySelectorAll('.skill-progress-bar');
+            
+            skillBars.forEach(bar => {
+                const width = bar.getAttribute('data-width');
+                bar.style.width = width;
+            });
+        }
+        
+        // Intersection Observer for skills section
+        const skillsSection = document.getElementById('skills');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateSkillBars();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        
+        if (skillsSection) {
+            observer.observe(skillsSection);
+        }
+        
+        // Form Submission Handler
+        const contactForm = document.getElementById('contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Basic form validation
+                if (!name || !email || !subject || !message) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+                
+                // In a real application, you would send this data to a server
+                // For demo purposes, show a success message
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
